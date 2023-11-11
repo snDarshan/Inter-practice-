@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar CSS */
+#carouselExampleCaptions {
+  margin-top: -0.5rem;
+}
+.container-fluid {
+  background-color: rgb(56, 122, 157);
+  height: 6rem;
+  filter: grayscale(50%);
+}
+.container-fluid > a {
+  color: rgb(210, 207, 207);
+}
+
+.container-fluid .navbar-brand {
+  font-weight: 900;
+  text-decoration: underline;
+  font-size: 2rem;
+}
+.container-fluid .navbar-brand:hover {
+  text-shadow: 1.5px 1.5px #53616e;
+}
+
+.container-fluid #navbarSupportedContent .navbar-nav > li > a {
+  color: whitesmoke;
+}
+.container-fluid .navbar-nav .nav-item > li > a:hover {
+  color: black;
+}
+
+/* Hero Section CSS */
+
+.carousel-inner .carousel-item {
+  height: 50rem;
+}
+.carousel-indicators {
+  opacity: 0%;
+}
+.carousel-inner .carousel-item > img {
+  filter: grayscale(60%);
+  height: 50rem;
+}
+
+.carousel-inner .carousel-item .carousel-caption > button {
+  background-color: whitesmoke;
+  font-size: 1.5rem;
+  width: 12rem;
+  border-radius: 0.5rem;
+  border-color: #53616e;
+  text-align: center;
+  filter: drop-shadow(1rem 1rem 1rem 1rem);
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.carousel-inner .carousel-item .carousel-caption > button > a {
+  text-decoration: none;
+  color: rgb(168, 80, 80);
+}
+.carousel-inner .carousel-item .carousel-caption > button > a > span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.carousel-inner .carousel-item .carousel-caption > button > a > span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.carousel-item .carousel-caption > button:hover > a > span {
+  padding-right: 1.5rem;
+}
+.carousel-item .carousel-caption > button:hover > a > span::after {
+  opacity: 1;
+  right: 0;
+}
+.carousel-inner #second_img > img {
+  filter: grayscale(0%);
+}
+.carousel-inner .carousel-item .carousel-caption > h1 {
+  font-weight: 900;
+  font-size: 9rem;
+  padding-right: 2rem;
+}
+.carousel-inner .carousel-item .carousel-caption > p {
+  font-size: 2rem;
+  font-weight: 800;
+}
